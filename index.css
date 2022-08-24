@@ -1,0 +1,24 @@
+
+h1 {
+    font-family: Tahoma;
+    font-size: 5fr;
+    color: greenyellow;
+    background-color: black;
+    text-align: center;
+    width: 40px auto;
+    height: 50px;
+    
+}
+.boxes {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    width: 320px;
+    margin: 50px auto;
+}
+.boxes div {
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+    
+    
+}
