@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Let's play</h1>
-
+    </header>
+    <div class="container">
+        
         <section class="boxes">
             <div id="box1"></div>
             <div id="box2"></div>
@@ -24,8 +26,37 @@
 
         </section>
     </div>
-    <h2 class="result-message"></h2>
-    <button class="play-again">Restart</button>
+    <footer>
+        <h2 class="result-message">The winner is</h2>
+        <article class="Text"></article>
+
+        <button class="play-again">Restart the game</button>
+
+    </footer>
+    
     
 </body>
+<script>
+    
+
+    var boxes = document.querySelector('.boxes');
+
+    // for (let i = 0; i < boxes.length; i = i + 1) {
+        boxes.addEventListener('click', function (event) {
+            let box = event.target
+            console.log(box)
+        box.style.backgroundColor = 'red'
+        }
+        )
+        // )}
+    // // the winning positions when clicked
+    // const lineWinner = document.querySelector('.boxes');
+
+    // var winningOptions = [
+    //     [0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
+
+    // // To start the game
+    // var gameStart = true;
+    // firstPlayer = 'O'
+</script>
 </html>

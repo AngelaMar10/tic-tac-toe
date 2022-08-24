@@ -1,24 +1,53 @@
-
-h1 {
+body {
+    margin: 50px;
+    background-color: rgb(134, 94, 220);
+    min-width: 320px;
+}
+header {
     font-family: Tahoma;
     font-size: 5fr;
-    color: greenyellow;
-    background-color: black;
+    color: rgb(215, 197, 248);
+    background-color: rgb(73, 28, 232);
     text-align: center;
     width: 40px auto;
     height: 50px;
+    margin-right: auto;
+    justify-content: space-around;
     
 }
 .boxes {
     display: grid;
     grid-template-columns: 100px 100px 100px;
-    width: 320px;
+    width: 306px;
     margin: 50px auto;
 }
 .boxes div {
-    border: 1px solid;
+    border: 2px solid white;
+    border-radius: 20px;
     height: 100px;
-    width: 100px;
+    width: 100px; 
+    cursor: pointer;
+    margin: auto;
+}
+h2 {
+    margin-left: 40%;
+    color: antiquewhite;
+}
+footer {
+    align-items: center;
+    font-size: 1rem;
+    font-family: sc, sans-serif;
+}
+article {
+    margin-left: 40%;
+    width: 200px;
+    height: 40px;
+    border: 1px solid blueviolet;
     
+}
+button {
+    margin-left: 40%;
+    align-items: center;
+    margin-top: 5px;
     
 }
