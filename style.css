@@ -2,6 +2,9 @@ body {
     margin: 50px;
     background-color: rgb(134, 94, 220);
     min-width: 320px;
+    justify-content: center;
+    align-items: center;
+
 }
 header {
     font-family: Tahoma;
@@ -20,10 +23,13 @@ header {
     grid-template-columns: 100px 100px 100px;
     width: 306px;
     margin: 50px auto;
+    grid-gap: 4px;
+    grid-column-gap: 8px;
 }
 .boxes-container .boxes {
     border: 2px solid white;
     border-radius: 20px;
+    background-color: rgb(148, 53, 237);
     height: 100px;
     width: 100px; 
     cursor: pointer;
@@ -35,7 +41,8 @@ header {
     font-weight: bold;
 }
 h2 {
-    margin-left: 40%;
+    margin-top: 2px ;
+    margin-left: 43%;
     color: antiquewhite;
 }
 footer {
@@ -44,15 +51,18 @@ footer {
     font-family: sc, sans-serif;
 }
 article {
-    margin-left: 40%;
-    width: 200px;
+    margin-left: 34%;
+    margin-bottom: 5px;
+    width: 400px;
     height: 40px;
     border: 1px solid blueviolet;
     
 }
 button {
-    margin-left: 40%;
+    margin-left: 45%;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 7px;
     
 }
+
+
