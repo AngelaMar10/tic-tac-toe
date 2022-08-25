@@ -1,57 +1,91 @@
-// // 
-    
-    // const spaceGame = ()
-    
-    const player1 = 'X'
-    const player2 = 'O'
-    var currentPlayer = ''
-    var gameBoard = ['', '', '', '', '', '', '', '', '',]
 
-    var boxes = document.querySelectorAll('.boxes');
+
+// const spaceGame = ()
+
+const player1 = 'X'
+const player2 = 'O'
+var currentPlayer = ''
+// var gameBoard = ['', '', '', '', '', '', '', '', '',]
+
+var boxes = document.querySelectorAll('.boxes');
 // It selects all the boxes
-    for (let index = 0; index < boxes.length; index++) {
-         boxes[index].addEventListener('click', makeMovement);
-        
-    }
+for (let index = 0; index < boxes.length; index++) {
+        boxes[index].addEventListener('click', makeMovement);
+    
+}
 // the function asigns the movement to the current player.
-    function makeMovement(event) {
-        let box = event.target
-        if (!box.textContent) {
- // ! if there is anything inside
-            setCurrentPlayer ()
-            box.textContent = currentPlayer;
-            // alert(positions)
-        }
-         
-    }
+function makeMovement(event) {
+    let box = event.target
+    if (!box.textContent) {
+// ! if there is anything inside
+        setCurrentPlayer ()
+        box.textContent = currentPlayer;
+        winningCheck ()
+
+    } 
+}
 // It checks if the player is the number 1, changes to number 2 and so on.
-    function setCurrentPlayer () {
-        if (currentPlayer === player1)
-        {
-            currentPlayer = player2
-        } else {
-            currentPlayer = player1
-        }
+function setCurrentPlayer () {
+    if (currentPlayer === player1)
+    {
+        currentPlayer = player2
+    } else {
+        currentPlayer = player1
     }
+}
+
+//______________________________________________
+
+function winningCheck (){
+var box1 = (document.getElementById('1'));
+var box2 = (document.getElementById('2'));
+var box3 = (document.getElementById('3'));
+if (box1.textContent === 'X' && box2.textContent === 'X' && box3.textContent === 'X') {
+    document.querySelector('.Text').textContent = 'Player 1'
+} else {
+    document.querySelector('.Text').textContent = 'Keep playing'
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
 
 
 //To check if the how the boxes were clicked
+// cada vez que un jugador juega se verifiquen esa funcion que contiene todas las if conditions.
 
-function boxesClicked (event) {
-    let clickedBox = event.target;
-    if (gameBoard[clickedBoxIndex] !== '') {
-        return;
-    }
-    BoxPlayed(clickedBox, clickedBoxIndex);
-    ResultValidation();
+// Al final de cada if hacer un console.log del ganador ej Player1 wins
+
+// function boxesClicked (event) {
+//     let clickedBox = event.target;
+//     if (gameBoard[clickedBoxIndex] !== '') {
+//         return;
+//     }
+//     BoxPlayed(clickedBox, clickedBoxIndex);
+//     ResultValidation();
     
-}
+// }
 
 // Work on the winning option
 // the winning positions when clicked 3 positions
     
-const winningOptions = [
-    [0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
+// const winningOptions = [
+//     [0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]] second attempt
 //     // function box clicked above
 
 //     var winningResult = document.querySelectorAll('.boxes')
