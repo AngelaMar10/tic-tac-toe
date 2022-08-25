@@ -33,7 +33,7 @@ header {
     grid-column-gap: 8px;
 }
 .boxes-container .boxes {
-    border: 2px solid white;
+    border: 2px solid rgb(229, 198, 245);
     border-radius: 20px;
     background-color: rgb(148, 53, 237);
     height: 100px;
