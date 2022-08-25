@@ -11,6 +11,7 @@ var boxes = document.querySelectorAll('.boxes');
 // It selects all the boxes
 for (let index = 0; index < boxes.length; index++) {
         boxes[index].addEventListener('click', makeMovement);
+        
     
 }
 // the function asigns the movement to the current player.
@@ -21,6 +22,7 @@ function makeMovement(event) {
         setCurrentPlayer ()
         box.textContent = currentPlayer;
         winningCheck ()
+        
 
     } 
 }
@@ -72,6 +74,22 @@ else if ((box1.textContent=== 'X' || box1.textContent=== 'O') && (box2.textConte
 else {
     document.querySelector('.Text').textContent = 'Keep playing'
 }
+}
+
+document.querySelector('.play-again').addEventListener('click', resetGame);
+
+function resetGame() {
+    location.reload();
+ document.getElementById('1').value = '';
+ document.getElementById('2').value = '';
+ document.getElementById('3').value = '';
+ document.getElementById('4').value = '';
+ document.getElementById('5').value = '';
+ document.getElementById('6').value = '';
+ document.getElementById('7').value = '';
+ document.getElementById('8').value = '';
+ document.getElementById('9').value = '';
+    
 }
 
 
