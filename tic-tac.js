@@ -40,23 +40,22 @@ function winningCheck (){
 var box1 = (document.getElementById('1'));
 var box2 = (document.getElementById('2'));
 var box3 = (document.getElementById('3'));
-if (box1.textContent === 'X' && box2.textContent === 'X' && box3.textContent === 'X') {
-    document.querySelector('.Text').textContent = 'Player 1'
-} else {
+var box4 = (document.getElementById('4'));
+var box5 = (document.getElementById('5'));
+var box6 = (document.getElementById('6'));
+var box7 = (document.getElementById('7'));
+var box8 = (document.getElementById('8'));
+var box9 = (document.getElementById('9'));
+if ((box1.textContent === 'X' && box2.textContent === 'X' && box3.textContent === 'X') || (box4.textContent === 'X' && box5.textContent === 'X' && box6.textContent === 'X') || (box7.textContent === 'X' && box8.textContent === 'X' && box9.textContent === 'X')){
+    document.querySelector('.Text').textContent = 'Player 1' 
+}
+
+else {
     document.querySelector('.Text').textContent = 'Keep playing'
 }
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
 
 
 
