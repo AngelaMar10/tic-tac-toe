@@ -7,20 +7,20 @@
     var currentPlayer = ''
     var gameBoard = ['', '', '', '', '', '', '', '', '',]
 
-    var boxes = document.querySelectorAll('.boxes').forEach(Object,i);
+    var boxes = document.querySelectorAll('.boxes');
 // It selects all the boxes
     for (let index = 0; index < boxes.length; index++) {
          boxes[index].addEventListener('click', makeMovement);
         
     }
 // the function asigns the movement to the current player.
-    function makeMovement(event, positions) {
+    function makeMovement(event) {
         let box = event.target
         if (!box.textContent) {
  // ! if there is anything inside
             setCurrentPlayer ()
             box.textContent = currentPlayer;
-            alert(positions)
+            // alert(positions)
         }
          
     }
