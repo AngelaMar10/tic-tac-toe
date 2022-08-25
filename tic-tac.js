@@ -5,19 +5,22 @@
     const player1 = 'X'
     const player2 = 'O'
     var currentPlayer = ''
-    var boxes = document.querySelectorAll('.boxes');
+    var gameBoard = ['', '', '', '', '', '', '', '', '',]
+
+    var boxes = document.querySelectorAll('.boxes').forEach(Object,i);
 // It selects all the boxes
     for (let index = 0; index < boxes.length; index++) {
          boxes[index].addEventListener('click', makeMovement);
         
     }
 // the function asigns the movement to the current player.
-    function makeMovement(event) {
+    function makeMovement(event, positions) {
         let box = event.target
         if (!box.textContent) {
  // ! if there is anything inside
             setCurrentPlayer ()
             box.textContent = currentPlayer;
+            alert(positions)
         }
          
     }
@@ -31,22 +34,35 @@
         }
     }
 
+
+//To check if the how the boxes were clicked
+
+function boxesClicked (event) {
+    let clickedBox = event.target;
+    if (gameBoard[clickedBoxIndex] !== '') {
+        return;
+    }
+    BoxPlayed(clickedBox, clickedBoxIndex);
+    ResultValidation();
+    
+}
+
 // Work on the winning option
 // the winning positions when clicked 3 positions
     
 const winningOptions = [
     [0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
-    // I'll need a function to check the full board and check who wins
+//     // function box clicked above
 
-    var winningResult = document.querySelectorAll('.boxes')
+//     var winningResult = document.querySelectorAll('.boxes')
 
-    // FOR loop to check the whole array inside winningOptions 
-    // and to validate each element
+//     // FOR loop to check the whole array inside winningOptions 
+//     // and to validate each element
 
-    for (let i = 0; i < array.length; i++) {
-        const element = array[i];
+//     for (let i = 0; i < array.length; i++) {
+//         const element = array[i];
         
-    }
+//     }
 
 
 
