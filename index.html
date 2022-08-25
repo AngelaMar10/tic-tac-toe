@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic tac toe</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
@@ -13,16 +13,16 @@
     </header>
     <div class="container">
         
-        <section class="boxes">
-            <div id="box1"></div>
-            <div id="box2"></div>
-            <div id="box3"></div>
-            <div id="box4"></div>
-            <div id="box5"></div>
-            <div id="box6"></div>
-            <div id="box7"></div>
-            <div id="box8"></div>
-            <div id="box9"></div>
+        <section class="boxes-container">
+            <div class="boxes" id="box1"></div>
+            <div class="boxes" id="box2"></div>
+            <div class="boxes" id="box3"></div>
+            <div class="boxes" id="box4"></div>
+            <div class="boxes" id="box5"></div>
+            <div class="boxes" id="box6"></div>
+            <div class="boxes" id="box7"></div>
+            <div class="boxes" id="box8"></div>
+            <div class="boxes" id="box9"></div>
 
         </section>
     </div>
@@ -36,64 +36,8 @@
     
     
 </body>
-<script>
-    // // the winning positions when clicked 3 positions
-    // const winningOptions = [
-    // [0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
+<script src="./tic-tac.js">
     
-    // const spaceGame = ()
-    
-    const player1 = 'X'
-    const player2 = 'O'
-    // currentPlayer = 'X'
-    var boxes = document.querySelector('.boxes');
-
-    boxes.addEventListener('click', function (event) {
-        let box = event.target
-        if (box.tagName === 'DIV'){
-            box.textContent = player1;
-        } else if (boxes.textContent === 'X' && boxes.children.textContent === ''){
-            box.textContent = player2;
-        }
-        // table = currentPlayer
-        // this.textContent = currentPlayer
-
-        // if (boxes.textContent === currentPlayer && boxes.children.textContent === ''){
-        //     box.textContent = player2;
-        // }
-    })
-
-
-    //     if (boxes.children[0].style.backgroundColor === 'red' && boxes.children[1].style.backgroundColor === 'red' && boxes.children[2].style.backgroundColor === 'red'){
-    //         boxes.children[0].style.backgroundColor = 'green'
-    //         boxes.children[1].style.backgroundColor = 'green'
-    //         boxes.children[2].style.backgroundColor = 'green'
-    //     }
-        
-    // })
-
-
-
-
-
-
-
-
-
-    // var boxes = document.querySelector('.boxes');
-
-    // // for (let i = 0; i < boxes.length; i = i + 1) {
-    //     boxes.addEventListener('click', function (event) {
-    //         let box = event.target
-    //         console.log(box)
-    //     box.style.backgroundColor = 'red'
-    //     }
-    //     )
-
-   
-  
-
-
 
 </script>
 </html>
