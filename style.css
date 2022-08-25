@@ -1,16 +1,20 @@
 body {
-    margin: 50px;
+    margin: 80px;
     background-color: rgb(134, 94, 220);
+    background-image: url(https://images.unsplash.com/photo-1629729802306-2c196af7eef5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80);
+    background-blend-mode: lighten;
+    background-size: cover;
     min-width: 320px;
     justify-content: center;
     align-items: center;
+    opacity: 90%;
 
 }
 header {
     font-family: Tahoma;
     font-size: 5fr;
-    color: rgb(215, 197, 248);
-    background-color: rgb(73, 28, 232);
+    color: rgb(223, 216, 236);
+    background-color: rgb(84, 44, 228);
     text-align: center;
     width: 30px auto;
     height: 50px;
@@ -19,20 +23,7 @@ header {
     border-radius: 5px;
     
 }
-.neon {
-	color: #fff;
-	margin-top: 30%;
-	text-shadow:
-		0 0 5px rgb(93, 0, 255),
-		0 0 10px rgba(0,178,255,1),
-		0 0 20px rgba(0,178,255,1),
-		0 0 40px rgba(38,104,127,1),
-		0 0 80px rgba(38,104,127,1),
-		0 0 90px rgba(38,104,127,1),
-		0 0 100px rgba(38,104,127,1),
-		0 0 140px rgba(38,104,127,1),
-		0 0 180px rgba(38,104,127,1);
-}
+
 .boxes-container {
     display: grid;
     grid-template-columns: 100px 100px 100px;
@@ -59,6 +50,7 @@ h2 {
     margin-top: 2px ;
     color: antiquewhite;
     text-shadow: rgb(61, 6, 112) 10%;
+    opacity: 100%;
 }
 footer {
     margin-left: 34% auto;
@@ -76,6 +68,8 @@ article {
     color: rgb(220, 182, 247);
     font-family: tahoma;
     text-align: center;
+    text-shadow: black;
+    
     
 }
 button {
