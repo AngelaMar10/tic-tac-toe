@@ -1,5 +1,5 @@
 # Tic tac toe
-The briefest description of my cool project and why you should all use it.
+The briefest description of my first project and why you should all use it.
 
 ## :computer: [Click here](https://angelamar10.github.io/tic-tac-toe/) to see my live project!
 
@@ -14,10 +14,18 @@ $ node app.js
 - Add in-app screenshots.
 
 ## :pencil2: Planning & Problem Solving
-- Talk about approach to the problem.
-- Add screenshots/drawings of doodles/plans during the planning phase.
-- Flow charts of app logic.
-![Wireframing](https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)
+-Start building the Html and then jump straight to CSS.
+
+Sketch about the data I would need for the project to understand how to use the variables. This is the order I decided to use:
+
+1) Deciding to set player1 as the first player and giving it the string 'X'. The second player 'O' and I typed both as const as they would change.
+2) Use a `FOR` loop to select ny boxes and to add the 'click' event to each one.
+3)Use a function to set the current player and to set Player1 with the first option. Aditionally I created a function to prevent overwriting each box.
+4)Next step: the winningCheck where I can set all the possibilities each player have to win.
+5)Think about how to let the players know who wins and if there is a draw Match.
+6)Think a way to reset the game once the players are done.
+
+
 
 ## :rocket: Cool tech
 - Programming languages
@@ -26,12 +34,17 @@ $ node app.js
 - Anything else you'd be proud to show your parents
 
 ## :scream: Bugs to fix :poop:
-- Anything a little broken
-- Anything a LOT broken
-- Buttons to not click too many times (cause its broken :unamused:)
+- The winningCheck function was re done several times as I was failing on calling them correctly.
+This part was long so I managed to make it a bit shorter using logic operators such as && and || on each if statement.
+
+- I used if statements to set the winning options on my board therefore my code is long.
+
+
 
 ## :sob: Lessons learnt
-What I would do differently if I could wind back the clock...
+I would spent more time to work on my JS code first and then spend the rest of the time on the CSS part. 
+
+Thinking about Html tags name can reduce working time because I realised some needed to be renamed due while working in Javascript part.
 
 ## :white_check_mark: Future features
-Cool things I would add if I can keep working on this
+I would like to add a sense of 3 dimension game kind of navigation site before playing. I would like to add a theme according the geographic user location. For example: a beach theme if people play in Bali.

@@ -1,11 +1,9 @@
-
-
 // const spaceGame = ()
 
 const player1 = 'X'
 const player2 = 'O'
 var currentPlayer = ''
-// var gameBoard = ['', '', '', '', '', '', '', '', '',]
+
 
 var boxes = document.querySelectorAll('.boxes');
 // It selects all the boxes
@@ -68,7 +66,7 @@ else if ((box1.textContent === 'O' && box5.textContent === 'O' && box9.textConte
     document.querySelector('.Text').textContent = 'Player 2' 
 }
 else if ((box1.textContent=== 'X' || box1.textContent=== 'O') && (box2.textContent=== 'X' || box2.textContent=== 'O') && (box3.textContent=== 'X' || box3.textContent=== 'O') && (box4.textContent=== 'X' || box4.textContent=== 'O') && (box5.textContent=== 'X' || box5.textContent=== 'O') && (box6.textContent=== 'X' || box6.textContent=== 'O') &&(box7.textContent=== 'X' || box7.textContent=== 'O') && (box8.textContent=== 'X' || box8.textContent=== 'O') &&(box9.textContent=== 'X' || box9.textContent=== 'O')){
-    document.querySelector('.Text').textContent = 'Match tie'
+    document.querySelector('.Text').textContent = 'Draw Match'
 
 }
 else {
