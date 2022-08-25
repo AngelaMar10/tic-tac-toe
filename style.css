@@ -12,11 +12,26 @@ header {
     color: rgb(215, 197, 248);
     background-color: rgb(73, 28, 232);
     text-align: center;
-    width: 40px auto;
+    width: 30px auto;
     height: 50px;
     margin-right: auto;
     justify-content: space-around;
+    border-radius: 5px;
     
+}
+.neon {
+	color: #fff;
+	margin-top: 30%;
+	text-shadow:
+		0 0 5px rgb(93, 0, 255),
+		0 0 10px rgba(0,178,255,1),
+		0 0 20px rgba(0,178,255,1),
+		0 0 40px rgba(38,104,127,1),
+		0 0 80px rgba(38,104,127,1),
+		0 0 90px rgba(38,104,127,1),
+		0 0 100px rgba(38,104,127,1),
+		0 0 140px rgba(38,104,127,1),
+		0 0 180px rgba(38,104,127,1);
 }
 .boxes-container {
     display: grid;
@@ -34,7 +49,7 @@ header {
     width: 100px; 
     cursor: pointer;
     margin: auto;
-    font-size: 4rem;
+    font-size: 5rem;
     color: aliceblue;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -42,26 +57,34 @@ header {
 }
 h2 {
     margin-top: 2px ;
-    margin-left: 43%;
     color: antiquewhite;
+    text-shadow: rgb(61, 6, 112) 10%;
 }
 footer {
-    align-items: center;
+    margin-left: 34% auto;
     font-size: 1rem;
     font-family: sc, sans-serif;
 }
 article {
-    margin-left: 34%;
+   background-color: blueviolet;
     margin-bottom: 5px;
-    width: 400px;
-    height: 40px;
+    width: 20px auto;
+    height: 50px;
     border: 1px solid blueviolet;
+    border-radius: 3px;
+    font-size: 2rem;
+    color: rgb(220, 182, 247);
+    font-family: tahoma;
+    text-align: center;
     
 }
 button {
-    margin-left: 45%;
-    align-items: center;
+    background-color: rgba(61, 6, 112, 0.514);
+    color: white;
+    padding: 3px;
     margin-top: 7px;
+    border-radius: 5px;
+    font-size: 1rem;
     
 }
 
