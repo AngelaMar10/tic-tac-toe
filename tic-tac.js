@@ -49,7 +49,12 @@ var box9 = (document.getElementById('9'));
 if ((box1.textContent === 'X' && box2.textContent === 'X' && box3.textContent === 'X') || (box4.textContent === 'X' && box5.textContent === 'X' && box6.textContent === 'X') || (box7.textContent === 'X' && box8.textContent === 'X' && box9.textContent === 'X')){
     document.querySelector('.Text').textContent = 'Player 1' 
 }
-
+else if ((box1.textContent === 'X' && box4.textContent === 'X' && box7.textContent === 'X') || (box2.textContent === 'X' && box5.textContent === 'X' && box8.textContent === 'X') || (box3.textContent === 'X' && box6.textContent === 'X' && box9.textContent === 'X')){
+    document.querySelector('.Text').textContent = 'Player 1' 
+}
+else if ((box1.textContent === 'X' && box5.textContent === 'X' && box9.textContent === 'X') || (box3.textContent === 'X' && box5.textContent === 'X' && box7.textContent === 'X')){
+    document.querySelector('.Text').textContent = 'Player 1' 
+}
 else {
     document.querySelector('.Text').textContent = 'Keep playing'
 }
