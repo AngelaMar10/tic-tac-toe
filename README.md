@@ -3,7 +3,7 @@ This is a Tic Tac Toe game for 2 people. It announces the winner or give a messa
 
 ## :Rocket: [Click here](https://angelamar10.github.io/tic-tac-toe/) to see my live project!
 
-## :Speech Ballon: About
+## :speech_balloon: About
 - How this game was built
 - Download instructions (if relevant):
 ```zsh
@@ -13,7 +13,7 @@ $ node app.js
 ```
 
 
-## :Memo: Planning & Problem Solving
+## :memo: Planning & Problem Solving
 -Start building the Html and then jump straight to CSS.
 
 -Sketch about the data I would need for the project to understand how to use the variables. This is the order I decided to use:
