@@ -82,4 +82,10 @@ button {
     
 }
 
-
+@media only screen and (max-width: 768px){
+    body {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0 1rem;
+    }
+}
